@@ -10,7 +10,13 @@
   margin-right: 25%;
 }
 
-#texter-1 {
+.texters {
   width: 160px;
   height: 120px;
+}
+
+.texters-table {
+  width: 80%;
+  margin-left: 50%;
+  margin-right: auto;
 }
