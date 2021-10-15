@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans+Condensed:wght@300&family=Rampart+One&display=swap");
 
 #title {
   text-align: center;
@@ -9,10 +9,11 @@
 
 #description {
   text-align: center;
-  font-size: 16px;
-  margin-left: 25%;
-  margin-right: 25%;
+  font-size: 18px;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-bottom: 50px;
+  font-family: "Open Sans Condensed", Arial;
 }
 
 .texters {
