@@ -1,4 +1,11 @@
-h1 {
+#title {
   text-align: center;
   font-size: 50px;
+}
+
+#description {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
