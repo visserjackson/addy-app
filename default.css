@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Rampart+One&display=swap");
+
 #title {
   text-align: center;
   font-size: 50px;
+  font-family: "Rampart One", Arial;
+  font-weight: normal;
 }
 
 #description {
@@ -8,6 +12,7 @@
   font-size: 16px;
   margin-left: 25%;
   margin-right: 25%;
+  margin-bottom: 50px;
 }
 
 .texters {
@@ -17,6 +22,6 @@
 
 .texters-table {
   width: 80%;
-  margin-left: 50%;
+  margin-left: auto;
   margin-right: auto;
 }
