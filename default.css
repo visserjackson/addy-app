@@ -18,30 +18,32 @@
   font-family: "Nunito", Arial;
 }
 
-.texters {
-  width: 175px;
-  height: 175px;
-}
-
-.texters-table {
-  width: 70%;
+.texts-table {
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: auto;
 }
 
-#texter-addy {
-  margin-left: 20px;
+#text-addy {
+  display: block;
+  aspect-ratio: 2.78 / 1;
+  width: 20vw;
 }
 
-#texter-byob {
+#text-byob {
+  display: block;
+  aspect-ratio: 2.16 / 1;
+  width: 20vw;
 }
 
-#texter-friends {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 15px;
+#text-friends {
+  display: block;
+  aspect-ratio: 4.12 / 1;
+  width: 20vw;
 }
 
-#texter-vibe {
+#text-vibe {
+  display: block;
+  aspect-ratio: 4.27 / 1;
+  width: 20vw;
 }
