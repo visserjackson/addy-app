@@ -24,7 +24,24 @@
 }
 
 .texters-table {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto;
+}
+
+#texter-addy {
+  margin-left: 20px;
+}
+
+#texter-byob {
+}
+
+#texter-friends {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+#texter-vibe {
 }
