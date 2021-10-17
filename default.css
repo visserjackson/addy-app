@@ -14,20 +14,20 @@
   font-size: 18px;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
   font-family: "Nunito", Arial;
 }
 
 .texts-table {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80vw;
+  align-content: center;
 }
 
 #text-addy {
   display: block;
   aspect-ratio: 2.78 / 1;
   width: 20vw;
+  margin-left: 10vw;
 }
 
 #text-byob {
@@ -46,4 +46,5 @@
   display: block;
   aspect-ratio: 4.27 / 1;
   width: 20vw;
+  margin-right: 10vw;
 }
