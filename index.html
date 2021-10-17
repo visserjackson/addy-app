@@ -23,13 +23,24 @@
   <br />
   <table>
     <tr>
-      <td class="table-fields">addy?</td>
+      <td class="table-labels">addy?</td>
       <td><input type="text" id="address" value=""</td>
 
-      <td class="table-fields">time?</td>
+      <td class="table-labels">time?</td>
       <td><input type="datetime-local" id="time" value="" /></td>
     </tr>
-    <tr></tr>
+    <tr>
+      <td class="table-labels">byob?</td>
+      <td>
+        <select id="byob-options">
+          <option value="yes">yes</option>
+          <option value="no">no</option>
+          <option value="other">
+            <input type="text" id="byob-other" value="" placeholder="other:" />
+          </option>
+        </select>
+      </td>
+    </tr>
   </table>
 
   <body></body>

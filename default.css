@@ -49,12 +49,17 @@
   margin-right: 10vw;
 }
 
-.table-fields {
+.table-labels {
   font-family: "Nunito", Arial;
   font-size: 14px;
 }
 
-#time {
+#byob-options {
+  font-family: "Nunito", Arial;
+  font-size: 14px;
+}
+
+input[type="text"] {
   font-family: "Nunito", Arial;
   font-size: 14px;
 }
