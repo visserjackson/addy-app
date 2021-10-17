@@ -48,3 +48,13 @@
   width: 20vw;
   margin-right: 10vw;
 }
+
+.table-fields {
+  font-family: "Nunito", Arial;
+  font-size: 14px;
+}
+
+#time {
+  font-family: "Nunito", Arial;
+  font-size: 14px;
+}
