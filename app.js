@@ -2,19 +2,24 @@
 
 //grab nodes
 let addyNode = document.querySelector("#address");
-console.dir(addyNode);
-
 let timeNode = document.querySelector("#time");
-console.dir(timeNode);
-
 let byobNode = document.querySelector("#byob-options");
-console.dir(byobNode);
-
 let vibeNode = document.querySelector("#vibe-options");
-console.dir(vibeNode);
-
 let inviteNode = document.querySelector("#invite-options");
-console.dir(inviteNode);
-
 let previewNode = document.querySelector("#preview");
-console.dir(previewNode);
+
+//function to update preview based on user inputs
+function buildPreview() {
+  function getBYOBText() {
+    switch (byobNode.value) {
+      case "yes":
+        return "BYOB.";
+      case "no":
+        return "Alcohol will be provided.";
+    }
+  }
+  return `${vibeNode.innerHTML} at ${addyNode.innerHTML}! Come by at ${
+    timeNode.innerHTML
+  }. ${getBYOBText()}.
+    Feel free to bring ${inviteNode.value}.`;
+}
