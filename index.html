@@ -28,12 +28,14 @@
         <td><input type="text" id="address" value=""</td>
 
         <td class="table-labels">time?</td>
-        <td><input type="time" id="time" value="" /></td>
+        <td>
+          <input type="time" id="time" value="" onchange="updatePreview()" />
+        </td>
       </tr>
       <tr>
         <td class="table-labels">byob?</td>
         <td>
-          <select id="byob-options">
+          <select id="byob-options" onchange="updatePreview()">
             <option value="yes">yes</option>
             <option value="no">no</option>
             <option value="other">
@@ -48,7 +50,7 @@
         </td>
         <td class="table-labels">vibe?</td>
         <td>
-          <select id="vibe-options">
+          <select id="vibe-options" onchange="updatePreview()">
             <option value="Kickback">kickback</option>
             <option value="Party">party</option>
             <option value="Rager">huge rager</option>
@@ -66,10 +68,10 @@
       <tr>
         <td class="table-labels">invite?</td>
         <td>
-          <select id="invite-options">
+          <select id="invite-options" onchange="updatePreview()">
             <option value="nobody">nobody else</option>
-            <option value="so">significant others</option>
-            <option value="mutual-frens">mutual friends</option>
+            <option value="significant others">significant others</option>
+            <option value="mutual friends">mutual friends</option>
             <option value="everyone">everyone</option>
             <option value="other">
               <input
@@ -89,7 +91,7 @@
 
       <th></th>
       <td>
-        <textarea id="preview" rows="5" cols="50"></textarea>
+        <textarea id="preview-text" rows="5" cols="50"></textarea>
       </td>
     </table>
   </body>
