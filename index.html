@@ -7,79 +7,91 @@
     <title>Document</title>
     <link rel="stylesheet" href="default.css" />
   </head>
-  <h1 id="title">addy?</h1>
-  <h2 id="description">
-    Tired of getting asked for an addy and having to share it with all your
-    friends manually? addy? helps streamline organizing kickbacks and parties by
-    allowing you to share critical details with exactly who you want to know in
-    just a few clicks.
-  </h2>
-  <table id="texts-table">
-    <td><img class="texts" id="text-addy" src="/src/images/addy-1.png"</td>
-    <td><img class="texts" id="text-byob" src="/src/images/addy-2.png"</td>
-    <td><img class="texts" id="text-friends" src="/src/images/addy-3.png"</td>
-    <td><img class="texts" id="text-vibe" src="/src/images/addy-4.png"</td>
-  </table>
-  <br />
-  <table id="options-table">
-    <tr>
-      <td class="table-labels">addy?</td>
-      <td><input type="text" id="address" value=""</td>
+  <body>
+    <h1 id="title">addy?</h1>
+    <h2 id="description">
+      Tired of getting asked for an addy and having to share it with all your
+      friends manually? addy? helps streamline organizing kickbacks and parties
+      by allowing you to share critical details with exactly who you want to
+      know in just a few clicks.
+    </h2>
+    <table id="texts-table">
+      <td><img class="texts" id="text-addy" src="/src/images/addy-1.png"</td>
+      <td><img class="texts" id="text-byob" src="/src/images/addy-2.png"</td>
+      <td><img class="texts" id="text-friends" src="/src/images/addy-3.png"</td>
+      <td><img class="texts" id="text-vibe" src="/src/images/addy-4.png"</td>
+    </table>
+    <br />
+    <table id="options-table">
+      <tr>
+        <td class="table-labels">addy?</td>
+        <td><input type="text" id="address" value=""</td>
 
-      <td class="table-labels">time?</td>
-      <td><input type="datetime-local" id="time" value="" /></td>
-    </tr>
-    <tr>
-      <td class="table-labels">byob?</td>
-      <td>
-        <select id="byob-options">
-          <option value="yes">yes</option>
-          <option value="no">no</option>
-          <option value="other">
-            <input type="text" id="byob-other" value="" placeholder="other:" />
-          </option>
-        </select>
-      </td>
-      <td class="table-labels">vibe?</td>
-      <td>
-        <select id="vibe-options">
-          <option value="kickback">kickback</option>
-          <option value="party">party</option>
-          <option value="rager">huge rager</option>
-          <option value="other">
-            <input type="text" id="vibe-other" value="" placeholder="other:" />
-          </option>
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td class="table-labels">invite?</td>
-      <td>
-        <select id="invite-options">
-          <option value="nobody">nobody else</option>
-          <option value="so">significant others</option>
-          <option value="mutual-frens">mutual friends</option>
-          <option value="everyone">everyone</option>
-          <option value="other">
-            <input
-              type="text"
-              id="invite-other"
-              value=""
-              placeholder="other:"
-            />
-          </option>
-        </select>
-      </td>
-    </tr>
-  </table>
-  <br />
-  <table id="preview-table">
-    <th>Invite preview:</th>
+        <td class="table-labels">time?</td>
+        <td><input type="datetime-local" id="time" value="" /></td>
+      </tr>
+      <tr>
+        <td class="table-labels">byob?</td>
+        <td>
+          <select id="byob-options">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+            <option value="other">
+              <input
+                type="text"
+                id="byob-other"
+                value=""
+                placeholder="other:"
+              />
+            </option>
+          </select>
+        </td>
+        <td class="table-labels">vibe?</td>
+        <td>
+          <select id="vibe-options">
+            <option value="Kickback">kickback</option>
+            <option value="Party">party</option>
+            <option value="Rager">huge rager</option>
+            <option value="Other">
+              <input
+                type="text"
+                id="vibe-other"
+                value=""
+                placeholder="other:"
+              />
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="table-labels">invite?</td>
+        <td>
+          <select id="invite-options">
+            <option value="nobody">nobody else</option>
+            <option value="so">significant others</option>
+            <option value="mutual-frens">mutual friends</option>
+            <option value="everyone">everyone</option>
+            <option value="other">
+              <input
+                type="text"
+                id="invite-other"
+                value=""
+                placeholder="other:"
+              />
+            </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br />
+    <table id="preview-table">
+      <th>Invite preview:</th>
 
-    <th></th>
-    <td>
-      <textarea id="preview" rows="5" cols="50"></textarea>
-    </td>
-  </table>
-  <body></body>
+      <th></th>
+      <td>
+        <textarea id="preview" rows="5" cols="50"></textarea>
+      </td>
+    </table>
+  </body>
+  <script src="app.js"></script>
 </html>
