@@ -64,6 +64,16 @@
   font-size: 14px;
 }
 
+#invite-options {
+  font-family: "Nunito", Arial;
+  font-size: 14px;
+}
+
+#preview-table {
+  font-family: "Nunito", Arial;
+  font-size: 14px;
+}
+
 input[type="text"] {
   font-family: "Nunito", Arial;
   font-size: 14px;

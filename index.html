@@ -21,7 +21,7 @@
     <td><img class="texts" id="text-vibe" src="/src/images/addy-4.png"</td>
   </table>
   <br />
-  <table>
+  <table id="options-table">
     <tr>
       <td class="table-labels">addy?</td>
       <td><input type="text" id="address" value=""</td>
@@ -52,7 +52,34 @@
         </select>
       </td>
     </tr>
+    <tr>
+      <td class="table-labels">invite?</td>
+      <td>
+        <select id="invite-options">
+          <option value="nobody">nobody else</option>
+          <option value="so">significant others</option>
+          <option value="mutual-frens">mutual friends</option>
+          <option value="everyone">everyone</option>
+          <option value="other">
+            <input
+              type="text"
+              id="invite-other"
+              value=""
+              placeholder="other:"
+            />
+          </option>
+        </select>
+      </td>
+    </tr>
   </table>
+  <br />
+  <table id="preview-table">
+    <th>Invite preview:</th>
 
+    <th></th>
+    <td>
+      <textarea id="preview" rows="5" cols="50"></textarea>
+    </td>
+  </table>
   <body></body>
 </html>
