@@ -46,8 +46,9 @@ function buildPreview() {
   }
   return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
-  )} on ${convertDay()}. ${getBYOBText()}
-    Feel free to bring ${inviteNode.value}.`;
+  )} on ${convertDay()}. ${getBYOBText()} Feel free to bring ${
+    inviteNode.value
+  }.`;
 }
 
 //add event listeners
