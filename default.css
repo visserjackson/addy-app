@@ -19,13 +19,15 @@
   font-size: 18px;
   margin-left: 15%;
   margin-right: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
+  margin-top: -25px;
   font-family: "Nunito", Arial;
 }
 
 .texts-table {
   width: 80vw;
   align-content: center;
+  margin-top: -50px;
 }
 
 #text-addy {
@@ -105,9 +107,10 @@ input[type="datetime-local"] {
 }
 
 #everything-table {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 80vw;
+  width: 75vw;
 }
 
 .share-images {
@@ -139,13 +142,13 @@ input[type="datetime-local"] {
   color: white;
 }
 
-#preview-label {
-  font-size: 18px;
-  width: 10vw;
-}
-
 #share-table {
   margin-left: 12.5vw;
+}
+
+#preview-label {
+  font-family: "Patua One", Arial;
+  font-size: 18px;
 }
 
 #flyer-table {
@@ -158,6 +161,11 @@ input[type="datetime-local"] {
   font-family: "Boogaloo", Arial;
   font-weight: bolder;
   color: white;
+  position: relative;
+}
+
+#flyer-everything {
+  margin-left: 3vw;
 }
 
 #flyer-title {
@@ -178,4 +186,10 @@ input[type="datetime-local"] {
   font-family: "Patua One", Arial;
   font-weight: bold;
   font-size: 18px;
+}
+
+#watermark {
+  font-size: 18px;
+  font-family: "Rampart One", Arial;
+  text-align: right;
 }
