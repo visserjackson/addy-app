@@ -91,3 +91,14 @@ input[type="text"] {
   align-content: left;
   width: 45vw;
 }
+
+#copy-image {
+  width: 25px;
+  height: 25px;
+}
+
+#copy-button {
+  background-color: white;
+  border-style: none;
+  align-self: right;
+}
