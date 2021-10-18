@@ -134,3 +134,9 @@ input[type="datetime-local"] {
 #share-table {
   margin-left: 12.5vw;
 }
+
+#flyer-table {
+  background-image: url("src/images/flyer_background.png");
+  width: 350px;
+  height: 350px;
+}
