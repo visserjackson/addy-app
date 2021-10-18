@@ -88,6 +88,7 @@
   font-size: 14px;
   background-color: #e5e5ec;
   border-radius: 5px;
+  position: relative;
 }
 
 input[type="text"] {
@@ -143,7 +144,8 @@ input[type="datetime-local"] {
 }
 
 #share-table {
-  margin-left: 12.5vw;
+  position: absolute;
+  left: 130px;
 }
 
 #preview-label {
