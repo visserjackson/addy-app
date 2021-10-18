@@ -125,6 +125,17 @@ input[type="datetime-local"] {
 .share-buttons {
   background-color: white;
   border-style: none;
+  align-self: left;
+}
+
+.share-images-flyer {
+  width: 25px;
+  height: 25px;
+}
+
+.share-buttons-flyer {
+  background-color: white;
+  border-style: none;
 }
 
 #address {
