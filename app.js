@@ -10,7 +10,9 @@ let previewNode = document.querySelector("#preview-text");
 
 //convert time
 function convertTime() {
-  if (timeNode.value != "") {
+  if (timeNode.value == "") {
+    return "";
+  } else {
     let time = new Date(timeNode.value);
     return time.toLocaleString("en-US", {
       hour: "numeric",
@@ -21,7 +23,10 @@ function convertTime() {
 }
 
 function convertDay() {
-  if (timeNode.value != "") {
+  if (timeNode.value == "") {
+    return "";
+  }
+  {
     let time = new Date(timeNode.value);
     return time.toLocaleString("en-US", {
       weekday: "long",
