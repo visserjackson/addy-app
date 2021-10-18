@@ -20,6 +20,12 @@ function convertTime() {
   }
 }
 
+function getNodeValue(node) {
+  if (node.value != "") {
+    return "";
+  } else return node.value;
+}
+
 function convertDay() {
   if (timeNode.value != "") {
     let time = new Date(timeNode.value);
@@ -44,11 +50,13 @@ function buildPreview() {
         return "Alcohol will be provided.";
     }
   }
-  return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
+  return `${getNodeValue(vibeNode)} at ${getNodeValue(
+    addyNode
+  )}! Come by at ${convertTime(
     timeNode.value
-  )} on ${convertDay()}. ${getBYOBText()} Feel free to bring ${
-    inviteNode.value
-  }.`;
+  )} on ${convertDay()}. ${getBYOBText()} Feel free to bring ${getNodeValue(
+    inviteNode
+  )}.`;
 }
 
 //add event listeners
