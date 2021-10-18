@@ -58,18 +58,22 @@
   font-family: "Nunito", Arial;
   font-size: 14px;
   border-radius: 5px;
+  background-color: #3ba3fc;
+  color: white;
 }
 
 #vibe-options {
   font-family: "Nunito", Arial;
   font-size: 14px;
   border-radius: 5px;
+  background-color: #e5e5ec;
 }
 
 #invite-options {
   font-family: "Nunito", Arial;
   font-size: 14px;
   border-radius: 5px;
+  background-color: #e5e5ec;
 }
 
 #preview-table {
@@ -89,7 +93,13 @@ input[type="text"] {
 
 #options-table {
   align-content: left;
+  margin-left: 2.5vw;
   width: 45vw;
+}
+
+#preview-table {
+  width: 45vw;
+  margin-left: 2.5vw;
 }
 
 #copy-image {
@@ -100,4 +110,13 @@ input[type="text"] {
 #copy-button {
   background-color: white;
   border-style: none;
+}
+
+#address {
+  background-color: #e5e5ec;
+}
+
+#time {
+  background-color: #3ba3fc;
+  color: white;
 }
