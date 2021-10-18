@@ -8,7 +8,7 @@ let vibeNode = document.querySelector("#vibe-options");
 let inviteNode = document.querySelector("#invite-options");
 let previewNode = document.querySelector("#preview-text");
 
-//update preivew
+//update preview
 function updatePreview() {
   previewNode.innerHTML = buildPreview();
 }
