@@ -85,16 +85,19 @@
   font-family: "San Francisco", Arial;
   font-size: 14px;
   background-color: #e5e5ec;
+  border-radius: 5px;
 }
 
 input[type="text"] {
   font-family: "San Francisco", Arial;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 input[type="datetime-local"] {
   font-family: "San Francisco", Arial;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 #options-table {
@@ -140,6 +143,7 @@ input[type="datetime-local"] {
   background-color: #3ba3fc;
   width: 350px;
   height: 350px;
+  border-radius: 10px;
 }
 
 #flyer-table td {
