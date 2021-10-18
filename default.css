@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@300&family=Open+Sans+Condensed:wght@300&family=Rampart+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Fredoka+One&family=Shrikhand&display=swap");
 @font-face {
   font-family: "San Francisco";
   src: url(/src/fonts/SFUIDisplay/SFUIDisplay-Semibold.otf);
@@ -136,7 +137,22 @@ input[type="datetime-local"] {
 }
 
 #flyer-table {
-  background-image: url("src/images/flyer_background.png");
+  background-color: #3ba3fc;
   width: 350px;
   height: 350px;
+}
+
+#flyer-table td {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Boogaloo", Arial;
+  font-weight: bolder;
+  color: white;
+}
+
+#flyer-title {
+  font-size: 45px !important;
+}
+#flyer-time {
+  font-size: 22px;
 }
