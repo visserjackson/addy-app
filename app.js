@@ -42,11 +42,19 @@ function updatePreview() {
 
 //copy text
 function copyText() {
-  previewNode.select();
-  previewNode.setSelectionRange(0, 99999);
-
-  navigator.clipboard.writeText(previewNode.innerHTML);
-  alert("Copied text");
+  let data = [
+    new ClipboardItem({
+      "text/plain": new Blob([previewNode.value], { type: "text/plain" }),
+    }),
+  ];
+  navigator.clipboard.write(data).then(
+    function () {
+      alert("Copied to clipboard.");
+    },
+    function () {
+      console.error("Unable to write to clipboard. :-(");
+    }
+  );
 }
 
 //build preview based on user inputs
