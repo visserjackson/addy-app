@@ -111,6 +111,12 @@ input[type="datetime-local"] {
   margin-left: 2.5vw;
 }
 
+#flyer-table {
+  align-content: right;
+  margin-right: 2.5vw;
+  width: 40vw;
+}
+
 .share-images {
   width: 25px;
   height: 25px;

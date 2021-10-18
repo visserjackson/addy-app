@@ -1,6 +1,6 @@
 "use strict";
 
-//grab nodes
+//grab nodes for text preview
 let addyNode = document.querySelector("#address");
 let timeNode = document.querySelector("#time");
 let byobNode = document.querySelector("#byob-options");
@@ -8,6 +8,12 @@ let vibeNode = document.querySelector("#vibe-options");
 let inviteNode = document.querySelector("#invite-options");
 let previewNode = document.querySelector("#preview-text");
 let copyNode = document.querySelector("#copy-button");
+
+//grab notes for flyer preview
+let flyerTitleNode = document.querySelector("#flyer-title");
+let flyerTimeNode = document.querySelector("#flyer-time");
+let flyerBYOBNode = document.querySelector("#flyer-byob");
+let flyerInviteNode = document.querySelector("#flyer-invite");
 
 //convert time
 function convertTime() {
@@ -59,31 +65,55 @@ function copyText() {
 
 //build preview based on user inputs
 function buildPreview() {
-  function getBYOBText() {
-    switch (byobNode.value) {
-      case "yes":
-        return "BYOB.";
-      case "no":
-        return "Alcohol will be provided.";
-    }
-  }
-
-  function getInivteText() {
-    if (inviteNode.value == "nobody else") {
-      return "Please just bring yourself.";
-    } else {
-      return `Feel free to bring ${inviteNode.value}!`;
-    }
-  }
   return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
   )} on ${convertDay()}. ${getBYOBText()} ${getInivteText()}`;
 }
 
-//add event listeners
+function getBYOBText() {
+  switch (byobNode.value) {
+    case "yes":
+      return "BYOB.";
+    case "no":
+      return "Alcohol will be provided.";
+  }
+}
+
+function getInivteText() {
+  if (inviteNode.value == "nobody else") {
+    return "Please just bring yourself.";
+  } else {
+    return `Feel free to bring ${inviteNode.value}!`;
+  }
+}
+
+//update flyer preview
+function updateFlyer() {
+  flyerTitleNode.innerHTML = updateTitle();
+  flyerTimeNode.innerHTML = updateTime();
+  flyerBYOBNode.innerHTML = getBYOBText();
+  flyerInviteNode.innerHTML = getInivteText();
+
+  function updateTitle() {
+    return `${vibeNode.value} @ ${addyNode.value}!`;
+  }
+
+  function updateTime() {
+    return `${convertDay()} @ ${convertTime()}`;
+  }
+}
+
+//add event listeners for text preview
 addyNode.addEventListener("keyup", updatePreview);
 timeNode.addEventListener("onchange", updatePreview);
 byobNode.addEventListener("onchange", updatePreview);
 vibeNode.addEventListener("onchange", updatePreview);
 inviteNode.addEventListener("onchange", updatePreview);
 copyNode.addEventListener("click", copyText);
+
+//add event listeners for flyer preview
+addyNode.addEventListener("keyup", updateFlyer);
+timeNode.addEventListener("onchange", updateFlyer);
+byobNode.addEventListener("onchange", updateFlyer);
+vibeNode.addEventListener("onchange", updateFlyer);
+inviteNode.addEventListener("onchange", updateFlyer);
