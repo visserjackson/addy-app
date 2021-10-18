@@ -102,15 +102,14 @@ input[type="text"] {
   margin-left: 2.5vw;
 }
 
-#copy-image {
+.share-images {
   width: 25px;
   height: 25px;
 }
 
-#copy-button {
+.share-buttons {
   background-color: white;
   border-style: none;
-  align-content: right;
 }
 
 #address {
