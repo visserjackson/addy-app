@@ -8,6 +8,18 @@ let vibeNode = document.querySelector("#vibe-options");
 let inviteNode = document.querySelector("#invite-options");
 let previewNode = document.querySelector("#preview-text");
 
+//convert date
+function convertTime() {
+  if (timeNode.value != "") {
+    let time = new Date(timeNode.value);
+    return time.toLocaleString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    });
+  }
+}
+
 //update preview
 function updatePreview() {
   previewNode.innerHTML = buildPreview();
@@ -23,9 +35,9 @@ function buildPreview() {
         return "Alcohol will be provided.";
     }
   }
-  return `${vibeNode.value} at ${addyNode.value}! Come by at ${
+  return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
-  }. ${getBYOBText()}
+  )}. ${getBYOBText()}
     Feel free to bring ${inviteNode.value}.`;
 }
 
