@@ -22,129 +22,64 @@
       <td><img class="texts" id="text-vibe" src="/src/images/addy-4.png"</td>
     </table>
     <br />
-    <table id="big-table">
+    <table id="options-table">
+      <tr>
+        <td class="table-labels">addy?</td>
+        <td><input type="text" id="address" value=""</td>
+
+        <td class="table-labels">time?</td>
+        <td>
+          <input
+            type="datetime-local"
+            id="time"
+            value=""
+            onchange="updatePreview(), updateFlyer()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td class="table-labels">byob?</td>
+        <td>
+          <select id="byob-options" onchange="updatePreview(), updateFlyer()">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </td>
+        <td class="table-labels">vibe?</td>
+        <td>
+          <select id="vibe-options" onchange="updatePreview(), updateFlyer()">
+            <option value="Kickback">kickback</option>
+            <option value="Party">party</option>
+            <option value="Huge rager">huge rager</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td class="table-labels">invite?</td>
+        <td>
+          <select id="invite-options" onchange="updatePreview(), updateFlyer()">
+            <option value="nobody else">nobody else</option>
+            <option value="significant others">significant others</option>
+            <option value="mutual friends">mutual friends</option>
+            <option value="everyone">everyone</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <table id="preview-table">
+      <th class="table-labels" id="preview-label">Invite preview:</th>
+
+      <th></th>
       <td>
-        <table id="small-table">
-          <table id="options-table">
-            <tr>
-              <td class="table-labels">addy?</td>
-              <td><input type="text" id="address" value=""</td>
-
-              <td class="table-labels">time?</td>
-              <td>
-                <input
-                  type="datetime-local"
-                  id="time"
-                  value=""
-                  onchange="updatePreview(), updateFlyer()"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="table-labels">byob?</td>
-              <td>
-                <select
-                  id="byob-options"
-                  onchange="updatePreview(), updateFlyer()"
-                >
-                  <option value="yes">yes</option>
-                  <option value="no">no</option>
-                </select>
-              </td>
-              <td class="table-labels">vibe?</td>
-              <td>
-                <select
-                  id="vibe-options"
-                  onchange="updatePreview(), updateFlyer()"
-                >
-                  <option value="Kickback">kickback</option>
-                  <option value="Party">party</option>
-                  <option value="Huge rager">huge rager</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td class="table-labels">invite?</td>
-              <td>
-                <select
-                  id="invite-options"
-                  onchange="updatePreview(), updateFlyer()"
-                >
-                  <option value="nobody else">nobody else</option>
-                  <option value="significant others">significant others</option>
-                  <option value="close friends">close friends</option>
-                  <option value="mutual friends">mutual friends</option>
-                  <option value="all your friends">all friends</option>
-                  <option value="everyone">everyone</option>
-                </select>
-              </td>
-            </tr>
-          </table>
-
-          <table id="preview-table">
-            <th class="table-labels" id="preview-label">Invite preview:</th>
-
-            <th></th>
-            <td>
-              <textarea
-                id="preview-text"
-                rows="5"
-                cols="50"
-                contenteditable
-              ></textarea>
-            </td>
-            <tr>
-              <table id="share-table">
-                <td id="copy-button-cell">
-                  <button class="share-buttons" id="copy-button">
-                    <img
-                      class="share-images"
-                      id="copy-image"
-                      src="/src/images/copy.png"
-                    />
-                  </button>
-                </td>
-                <td id="insta-button-cell">
-                  <button class="share-buttons" id="insta-button">
-                    <img
-                      class="share-images"
-                      id="insta-image"
-                      src="/src/images/instagram.png"
-                    />
-                  </button>
-                </td>
-                <td id="snap-button-cell">
-                  <button class="share-buttons" id="snap-button">
-                    <img
-                      class="share-images"
-                      id="snap-image"
-                      src="/src/images/snapchat.png"
-                    />
-                  </button>
-                </td>
-              </table>
-            </tr>
-          </table>
-        </table>
+        <textarea
+          id="preview-text"
+          rows="5"
+          cols="50"
+          contenteditable
+        ></textarea>
       </td>
-      <td>
-        <table id="flyer-table">
-          <tr>
-            <td id="flyer-title"></td>
-          </tr>
-          <tr>
-            <td id="flyer-time"></td>
-          </tr>
-          <tr>
-            <td id="flyer-byob"></td>
-          </tr>
-          <tr>
-            <td id="flyer-invite"></td>
-          </tr>
-          <tr>
-            <td id="watermark">addy?</td>
-          </tr>
-        </table>
+      <tr>
         <table id="share-table">
           <td id="copy-button-cell">
             <button class="share-buttons" id="copy-button">
@@ -174,6 +109,50 @@
             </button>
           </td>
         </table>
+      </tr>
+    </table>
+
+    <table id="flyer-table">
+      <tr>
+        <td id="flyer-title"></td>
+      </tr>
+      <tr>
+        <td id="flyer-time"></td>
+      </tr>
+      <tr>
+        <td id="flyer-byob"></td>
+      </tr>
+      <tr>
+        <td id="flyer-invite"></td>
+      </tr>
+    </table>
+    <table id="share-table-flyer">
+      <td id="save-button-cell-flyer">
+        <button class="share-buttons-flyer" id="save-button-flyer">
+          <img
+            class="share-images-flyer"
+            id="save-image-flyer"
+            src="/src/images/save_image.png"
+          />
+        </button>
+      </td>
+      <td id="insta-button-cell-flyer">
+        <button class="share-buttons-flyer" id="insta-button-cell-flyer">
+          <img
+            class="share-images-flyer"
+            id="insta-image-flyer"
+            src="/src/images/instagram.png"
+          />
+        </button>
+      </td>
+      <td id="snap-button-cell-flyer">
+        <button class="share-buttons-flyer" id="snap-button-cell-flyer">
+          <img
+            class="share-images"
+            id="snap-image-flyer"
+            src="/src/images/snapchat.png"
+          />
+        </button>
       </td>
     </table>
   </body>
