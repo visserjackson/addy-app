@@ -102,19 +102,12 @@ input[type="datetime-local"] {
 
 #options-table {
   align-content: left;
-  margin-left: 2.5vw;
-  width: 45vw;
 }
 
-#preview-table {
-  width: 45vw;
-  margin-left: 2.5vw;
-}
-
-#flyer-table {
-  align-content: right;
-  margin-right: 2.5vw;
-  width: 40vw;
+#everything-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
 }
 
 .share-images {
