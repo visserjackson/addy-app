@@ -80,7 +80,6 @@
 #preview-text {
   font-family: "Nunito", Arial;
   font-size: 14px;
-  word-break: keep-all;
 }
 
 input[type="text"] {
