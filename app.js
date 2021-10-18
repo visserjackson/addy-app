@@ -8,7 +8,7 @@ let vibeNode = document.querySelector("#vibe-options");
 let inviteNode = document.querySelector("#invite-options");
 let previewNode = document.querySelector("#preview-text");
 
-//convert date
+//convert time
 function convertTime() {
   if (timeNode.value != "") {
     let time = new Date(timeNode.value);
@@ -16,6 +16,15 @@ function convertTime() {
       hour: "numeric",
       minute: "numeric",
       hour12: true,
+    });
+  }
+}
+
+function convertDay() {
+  if (timeNode.value != "") {
+    let time = new Date(timeNode.value);
+    return time.toLocaleString("en-US", {
+      weekday: "long",
     });
   }
 }
@@ -37,7 +46,7 @@ function buildPreview() {
   }
   return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
-  )}. ${getBYOBText()}
+  )} on ${convertDay()}. ${getBYOBText()}
     Feel free to bring ${inviteNode.value}.`;
 }
 
