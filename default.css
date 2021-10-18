@@ -87,3 +87,8 @@ input[type="text"] {
   font-family: "Nunito", Arial;
   font-size: 14px;
 }
+
+#options-table {
+  align-content: left;
+  width: 45vw;
+}
