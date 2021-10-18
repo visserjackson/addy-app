@@ -150,19 +150,29 @@ input[type="datetime-local"] {
   width: 350px;
   height: 350px;
   border-radius: 10px;
-}
-
-#flyer-table td {
   text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Boogaloo", Arial;
   font-weight: bolder;
   color: white;
 }
 
 #flyer-title {
-  font-size: 45px !important;
+  font-size: 45px;
 }
 #flyer-time {
-  font-size: 22px;
+  font-size: 24px;
+  padding-bottom: 100px;
+}
+
+#flyer-byob {
+  font-family: "Patua One", Arial;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#flyer-invite {
+  font-family: "Patua One", Arial;
+  font-weight: bold;
+  font-size: 18px;
 }
