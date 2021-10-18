@@ -59,11 +59,17 @@ function buildPreview() {
         return "Alcohol will be provided.";
     }
   }
+
+  function getInivteText() {
+    if (inviteNode.value == "nobody else") {
+      return "Please just bring yourself.";
+    } else {
+      return `Feel free to bring ${inviteNode.value}!`;
+    }
+  }
   return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
-  )} on ${convertDay()}. ${getBYOBText()} Feel free to bring ${
-    inviteNode.value
-  }.`;
+  )} on ${convertDay()}. ${getBYOBText()} ${getInivteText()}`;
 }
 
 //add event listeners
