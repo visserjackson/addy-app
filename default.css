@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@300&family=Open+Sans+Condensed:wght@300&family=Rampart+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 #title {
   text-align: center;
   font-size: 50px;
@@ -50,7 +50,7 @@
 }
 
 .table-labels {
-  font-family: "Nunito", Arial;
+  font-family: "Patua One", Arial;
   font-size: 14px;
 }
 
@@ -110,6 +110,7 @@ input[type="text"] {
 #copy-button {
   background-color: white;
   border-style: none;
+  align-content: right;
 }
 
 #address {
