@@ -105,7 +105,7 @@ function updateFlyer() {
 }
 
 function downloadTable() {
-  $("#flyer-table").tableExport({ type: "png", escape: "false" });
+  "#flyer-table".tableExport({ type: "csv" });
 }
 
 //add event listeners for text preview
