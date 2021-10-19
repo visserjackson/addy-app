@@ -104,7 +104,9 @@ function updateFlyer() {
   }
 }
 
-function hideTable() {}
+function downloadTable() {
+  $("#flyer-table").tableExport({ type: "png" });
+}
 
 //add event listeners for text preview
 addyNode.addEventListener("keyup", updatePreview);
@@ -120,4 +122,4 @@ timeNode.addEventListener("onchange", updateFlyer);
 byobNode.addEventListener("onchange", updateFlyer);
 vibeNode.addEventListener("onchange", updateFlyer);
 inviteNode.addEventListener("onchange", updateFlyer);
-saveNode.addEventListener("click", hideTable);
+saveNode.addEventListener("click", downloadTable);
