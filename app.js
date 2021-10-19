@@ -14,6 +14,7 @@ let flyerTitleNode = document.querySelector("#flyer-title");
 let flyerTimeNode = document.querySelector("#flyer-time");
 let flyerBYOBNode = document.querySelector("#flyer-byob");
 let flyerInviteNode = document.querySelector("#flyer-invite");
+let saveNode = document.querySelector("#save-button-flyer");
 
 //convert time
 function convertTime() {
@@ -103,6 +104,10 @@ function updateFlyer() {
   }
 }
 
+function downloadTable() {
+  $("#flyer-table").tableExport({ type: "png", escape: "false" });
+}
+
 //add event listeners for text preview
 addyNode.addEventListener("keyup", updatePreview);
 timeNode.addEventListener("onchange", updatePreview);
@@ -117,3 +122,4 @@ timeNode.addEventListener("onchange", updateFlyer);
 byobNode.addEventListener("onchange", updateFlyer);
 vibeNode.addEventListener("onchange", updateFlyer);
 inviteNode.addEventListener("onchange", updateFlyer);
+saveNode.addEventListener("click", downloadTable);
