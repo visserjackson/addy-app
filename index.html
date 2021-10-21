@@ -53,6 +53,7 @@
                 <select id="byob-options" onchange="updatePreview(), updateFlyer()">
                   <option value="yes">yes</option>
                   <option value="no">no</option>
+                  <option><input type="text" id="byob-other" class="others" placeholder="Other:" onchange="updatePreview(), updateFlyer()"></option>
                 </select>
               </td>
               <td class="table-labels">vibe?</td>
@@ -156,7 +157,7 @@
   </table>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="node_modules/tableexport.jquery.plugin/libs/FileSaver/FileSaver.min.js"></script>
+  <!-- <script type="text/javascript" src="node_modules/tableexport.jquery.plugin/libs/FileSaver/FileSaver.min.js"></script> -->
   <script type="text/javascript" src="node_modules/tableexport.jquery.plugin/libs/es6-promise/es6-promise.auto.min.js"></script>
   <script type="text/javascript" src="node_modules/tableexport.jquery.plugin/libs/html2canvas/html2canvas.min.js"></script>
   <script type="text/javascript" src="node_modules/tableexport.jquery.plugin/tableExport.min.js"></script>

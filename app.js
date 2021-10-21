@@ -4,6 +4,7 @@
 let addyNode = document.querySelector("#address");
 let timeNode = document.querySelector("#time");
 let byobNode = document.querySelector("#byob-options");
+let byobOtherNode = $("#byob-other");
 let vibeNode = document.querySelector("#vibe-options");
 let inviteNode = document.querySelector("#invite-options");
 let previewNode = document.querySelector("#preview-text");
@@ -72,6 +73,10 @@ function buildPreview() {
 }
 
 function getBYOBText() {
+  console.dir($("#byob-other"));
+  if ($("#byob-other").value != "") {
+    return $("#byob-other")[0].value;
+  }
   switch (byobNode.value) {
     case "yes":
       $(byobNode).css("background-color", "#3ba3fc");
