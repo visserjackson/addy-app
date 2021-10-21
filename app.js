@@ -74,8 +74,12 @@ function buildPreview() {
 function getBYOBText() {
   switch (byobNode.value) {
     case "yes":
+      $(byobNode).css("background-color", "#3ba3fc");
+      $(byobNode).css("color", "white");
       return "BYOB.";
     case "no":
+      $(byobNode).css("background-color", "#e5e5ec");
+      $(byobNode).css("color", "black");
       return "Alcohol will be provided.";
   }
 }
