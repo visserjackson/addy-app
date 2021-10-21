@@ -8,6 +8,7 @@ let byobOtherNode = document.querySelector("#byob-other");
 let vibeNode = document.querySelector("#vibe-options");
 let vibeOtherNode = document.querySelector("#vibe-other");
 let inviteNode = document.querySelector("#invite-options");
+let inviteOtherNode = document.querySelector("#invite-other");
 let previewNode = document.querySelector("#preview-text");
 let copyNode = document.querySelector("#copy-button");
 
@@ -90,9 +91,6 @@ function getBYOBText() {
 }
 
 function getInivteText() {
-  // if ($("#vibe-other").value != "") {
-  //   return $("#vibe-other")[0].value;
-  // }
   if (inviteNode.value == "nobody else") {
     return "Please just bring yourself.";
   } else {
