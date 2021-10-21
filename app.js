@@ -4,8 +4,9 @@
 let addyNode = document.querySelector("#address");
 let timeNode = document.querySelector("#time");
 let byobNode = document.querySelector("#byob-options");
-let byobOtherNode = $("#byob-other");
+let byobOtherNode = document.querySelector("#byob-other");
 let vibeNode = document.querySelector("#vibe-options");
+let vibeOtherNode = document.querySelector("#vibe-other");
 let inviteNode = document.querySelector("#invite-options");
 let previewNode = document.querySelector("#preview-text");
 let copyNode = document.querySelector("#copy-button");
@@ -67,13 +68,12 @@ function copyText() {
 
 //build preview based on user inputs
 function buildPreview() {
-  return `${vibeNode.value} at ${addyNode.value}! Come by at ${convertTime(
+  return `${getVibeText()} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
   )} on ${convertDay()}. ${getBYOBText()} ${getInivteText()}`;
 }
 
 function getBYOBText() {
-  console.dir($("#byob-other"));
   if ($("#byob-other").value != "") {
     return $("#byob-other")[0].value;
   }
@@ -90,10 +90,21 @@ function getBYOBText() {
 }
 
 function getInivteText() {
+  // if ($("#vibe-other").value != "") {
+  //   return $("#vibe-other")[0].value;
+  // }
   if (inviteNode.value == "nobody else") {
     return "Please just bring yourself.";
   } else {
     return `Feel free to bring ${inviteNode.value}!`;
+  }
+}
+
+function getVibeText() {
+  if ($("#vibe-other").value != "") {
+    return $("#vibe-other")[0].value;
+  } else {
+    return vibeNode.value;
   }
 }
 
@@ -105,7 +116,7 @@ function updateFlyer() {
   flyerInviteNode.innerHTML = getInivteText();
 
   function updateTitle() {
-    return `${vibeNode.value} @ ${addyNode.value}!`;
+    return `${getVibeText()} @ ${addyNode.value}!`;
   }
 
   function updateTime() {
@@ -121,6 +132,7 @@ function downloadTable() {
 addyNode.addEventListener("keyup", updatePreview);
 timeNode.addEventListener("onchange", updatePreview);
 byobNode.addEventListener("onchange", updatePreview);
+byobOtherNode.addEventListener("onchange", updatePreview);
 vibeNode.addEventListener("onchange", updatePreview);
 inviteNode.addEventListener("onchange", updatePreview);
 copyNode.addEventListener("click", copyText);
@@ -129,6 +141,7 @@ copyNode.addEventListener("click", copyText);
 addyNode.addEventListener("keyup", updateFlyer);
 timeNode.addEventListener("onchange", updateFlyer);
 byobNode.addEventListener("onchange", updateFlyer);
+byobOtherNode.addEventListener("onchange", updateFlyer);
 vibeNode.addEventListener("onchange", updateFlyer);
 inviteNode.addEventListener("onchange", updateFlyer);
 saveNode.addEventListener("click", downloadTable);
