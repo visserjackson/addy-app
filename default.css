@@ -130,8 +130,8 @@ input[type="datetime-local"] {
 }
 
 .share-images-flyer {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
 }
 
 .share-buttons-flyer {
@@ -209,8 +209,8 @@ input[type="datetime-local"] {
 
 #hidden-image {
   background-color: #3ba3fc;
-  width: 350px;
-  height: 350px;
+  width: 1000px;
+  height: 1000px;
   border-radius: 10px;
   text-align: center;
   font-size: 28px;
