@@ -92,10 +92,13 @@ function getBYOBText() {
 }
 
 function getInivteText() {
+  if (inviteOtherNode.value != "") {
+    return `Invite: ${inviteOtherNode.value}`;
+  }
   if (inviteNode.value == "nobody else") {
-    return "Please just bring yourself.";
+    return "Please do not invite anyone else.";
   } else {
-    return `Feel free to bring ${inviteNode.value}!`;
+    return `Invite: ${inviteNode.value}!`;
   }
 }
 
