@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&family=Fredoka+One&family=Shrikhand&display=swap");
 @font-face {
   font-family: "San Francisco";
-  src: url(/addy-app/src/images/SFUIDisplay-Semibold.otf);
+  src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
 }
 #title {
   text-align: center;
