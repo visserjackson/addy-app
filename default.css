@@ -23,6 +23,11 @@
   margin-top: -25px;
   font-family: "Nunito", Arial;
 }
+.descriptions {
+  text-align: center;
+  font-size: 14px;
+  font-family: "Nunito", Arial;
+}
 
 .texts-table {
   width: 80vw;
@@ -213,4 +218,8 @@ input[type="datetime-local"] {
   font-weight: bolder;
   color: white;
   position: relative;
+}
+
+.padding-between-cols td {
+  padding: 5px 5px;
 }
