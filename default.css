@@ -207,19 +207,6 @@ input[type="datetime-local"] {
   text-align: right;
 }
 
-#hidden-image {
-  background-color: #3ba3fc;
-  width: 1000px;
-  height: 1000px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 28px;
-  font-family: "Boogaloo", Arial;
-  font-weight: bolder;
-  color: white;
-  position: relative;
-}
-
 .padding-between-cols td {
   padding: 5px 5px;
 }
