@@ -9,6 +9,7 @@ let vibeNode = document.querySelector("#vibe-options");
 let vibeOtherNode = document.querySelector("#vibe-other");
 let inviteNode = document.querySelector("#invite-options");
 let inviteOtherNode = document.querySelector("#invite-other");
+let venmoNode = document.querySelector("#venmo");
 let previewNode = document.querySelector("#preview-text");
 let copyNode = document.querySelector("#copy-button");
 
@@ -71,7 +72,7 @@ function copyText() {
 function buildPreview() {
   return `${getVibeText()} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
-  )} on ${convertDay()}. ${getBYOBText()}. ${getInivteText()}.`;
+  )} on ${convertDay()}. ${getBYOBText()}.${getVenmoText()} ${getInivteText()}.`;
 }
 
 function getBYOBText() {
@@ -110,6 +111,14 @@ function getVibeText() {
   }
 }
 
+function getVenmoText() {
+  if (venmoNode.value == "") {
+    return "";
+  } else {
+    return `Venmo ${venmoNode.value}.`;
+  }
+}
+
 //update flyer preview
 function updateFlyer() {
   flyerTitleNode.innerHTML = updateTitle();
@@ -137,6 +146,7 @@ byobNode.addEventListener("onchange", updatePreview);
 byobOtherNode.addEventListener("onchange", updatePreview);
 vibeNode.addEventListener("onchange", updatePreview);
 inviteNode.addEventListener("onchange", updatePreview);
+venmoNode.addEventListener("onchange", updatePreview);
 copyNode.addEventListener("click", copyText);
 
 //add event listeners for flyer preview
@@ -146,4 +156,5 @@ byobNode.addEventListener("onchange", updateFlyer);
 byobOtherNode.addEventListener("onchange", updateFlyer);
 vibeNode.addEventListener("onchange", updateFlyer);
 inviteNode.addEventListener("onchange", updateFlyer);
+venmoNode.addEventListener("onchange", updateFlyer);
 saveNode.addEventListener("click", downloadTable);
