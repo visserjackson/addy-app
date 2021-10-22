@@ -75,18 +75,19 @@ function buildPreview() {
 }
 
 function getBYOBText() {
-  if ($("#byob-other").value != "") {
-    return $("#byob-other")[0].value;
-  }
-  switch (byobNode.value) {
-    case "yes":
-      $(byobNode).css("background-color", "#3ba3fc");
-      $(byobNode).css("color", "white");
-      return "BYOB.";
-    case "no":
-      $(byobNode).css("background-color", "#e5e5ec");
-      $(byobNode).css("color", "black");
-      return "Alcohol will be provided.";
+  if (byobOtherNode.value != "") {
+    return byobOtherNode.value;
+  } else {
+    switch (byobNode.value) {
+      case "yes":
+        $(byobNode).css("background-color", "#3ba3fc");
+        $(byobNode).css("color", "white");
+        return "BYOB.";
+      case "no":
+        $(byobNode).css("background-color", "#e5e5ec");
+        $(byobNode).css("color", "black");
+        return "Alcohol will be provided.";
+    }
   }
 }
 
