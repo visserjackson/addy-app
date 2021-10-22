@@ -2,7 +2,7 @@
 
 **addy?**
 <br>
-A webpage application to streamline organizing kickbacks and parties. Best viewd on desktop (responsive mobile layout coming soon!)
+A webpage application to streamline organizing kickbacks and parties. Best viewed on desktop (responsive mobile layout coming soon!).
 <br>
 <br>
 addy? does not condone underage drinking or illicit substance use. addy? is not responsible for anything that transpires at any event it is used to organize.
