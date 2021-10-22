@@ -100,8 +100,8 @@ function getInivteText() {
 }
 
 function getVibeText() {
-  if ($("#vibe-other").value != "") {
-    return $("#vibe-other")[0].value;
+  if (vibeOtherNode.value != "") {
+    return vibeOtherNode.value;
   } else {
     return vibeNode.value;
   }
