@@ -73,7 +73,7 @@ function copyText() {
 function buildPreview() {
   return `${getVibeText()} at ${addyNode.value}! Come by at ${convertTime(
     timeNode.value
-  )} on ${convertDay()}. ${getBYOBText()}.${getVenmoText()} ${getInivteText()}.`;
+  )} on ${convertDay()}. ${getBYOBText()}. ${getVenmoText()} ${getInivteText()}.`;
 }
 
 function getBYOBText() {
