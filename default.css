@@ -190,6 +190,12 @@ input[type="datetime-local"] {
   font-size: 18px;
 }
 
+#flyer-venmo {
+  font-family: "Patua One", Arial;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 #watermark {
   font-size: 18px;
   font-family: "Rampart One", Arial;

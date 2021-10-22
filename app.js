@@ -18,6 +18,7 @@ let flyerTitleNode = document.querySelector("#flyer-title");
 let flyerTimeNode = document.querySelector("#flyer-time");
 let flyerBYOBNode = document.querySelector("#flyer-byob");
 let flyerInviteNode = document.querySelector("#flyer-invite");
+let flyerVenmoNode = document.querySelector("#flyer-venmo");
 let saveNode = document.querySelector("#save-button-flyer");
 
 //convert time
@@ -123,6 +124,7 @@ function getVenmoText() {
 function updateFlyer() {
   flyerTitleNode.innerHTML = updateTitle();
   flyerTimeNode.innerHTML = updateTime();
+  flyerVenmoNode.innerHTML = getVenmoText();
   flyerBYOBNode.innerHTML = getBYOBText();
   flyerInviteNode.innerHTML = getInivteText();
 
